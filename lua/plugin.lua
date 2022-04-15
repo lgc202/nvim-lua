@@ -103,6 +103,9 @@ packer.startup({
 
         -- telescope 查找文件、内容
         use { 'nvim-telescope/telescope.nvim', requires = { "nvim-lua/plenary.nvim" } }
+         
+        -- 浮动窗口插件
+        use 'voldikss/vim-floaterm'
 
         if paccker_bootstrap then
             packer.sync()

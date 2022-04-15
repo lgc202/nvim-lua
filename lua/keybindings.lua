@@ -146,4 +146,8 @@ pluginKeys.cmp = function(cmp)
     }
 end
 
+-- nvim-floaterm 浮动窗口
+map("n", "<F12>", ":FloatermToggle<CR>", opt)
+map("t", "<F12>", "<C-\\><C-n>:FloatermToggle<CR>", opt)
+
 return pluginKeys
