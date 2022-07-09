@@ -13,6 +13,18 @@ local map = vim.api.nvim_set_keymap
 -- 插件快捷键
 local pluginKeys = {}
 
+-- 窗口管理
+-- 取消 s 默认功能
+map("n", "s", "", opt)
+-- windows 分屏快捷键
+map("n", "<leader>sv", ":vsp<CR>", opt)
+map("n", "<leader>sh", ":sp<CR>", opt)
+-- 关闭当前
+map("n", "<leader>sc", "<C-w>c", opt)
+-- 关闭其他
+map("n", "so", "<C-w>o", opt)
+
+
 -- treesitter 代码高亮插件
 map("n", "zz", ":foldclose<CR>", opt)
 map("n", "Z", ":foldopen<CR>", opt)
